@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    background: linear-gradient(to right, black, rgb(42, 40, 40), black );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    background-color: white;
+    width: 100%;
+    max-width: 540px;
+    padding: 3vw 2vw;
+    border-radius: 5px;
+    margin-bottom: 30vh;
+}
+
+.main-box h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 2vw;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 1.5vw;
+    margin-bottom: 25px;
+    background-color: rgb(241, 241, 241);
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 17px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 3% 8%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+
+ul li {
+    padding: 12px 8px 12px 40px;
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-image: url(assets/circle.png);
+    background-size: cover;
+    background-position: center;
+    top: 11px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: rgb(102, 102, 102);
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(assets/checked.png);
+    height: 22px;
+    width: 22px;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 40px;
+    height: 30px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 25px;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
+
+@media (max-width: 1200px) {
+    .main-box h2 {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-box {
+        margin-inline: 5vw;
+    }
+
+    .main-box h2 {
+        font-size: 5vw;
+    }
+
+    button {
+        padding: 3% 8%; 
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .main-box h2 {
+        font-size: 7vw;
+    }
+    
+    .row {
+        margin-inline: 5vw;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 352px) {
+
+    .main-box h2 {
+        font-size: 8vw;
+    }
+
+    button {
+        margin-top: 4vw;
+    }
+
+    input {
+        padding-top: 2vh; 
+    }
+
+    ul li {
+       font-size: 15px; 
+    }
+
+    ul li::before {
+        height: 20px;
+        width: 20px;
+    }
+
+    ul li span {
+        font-size: 20px;
+    }
+
+}
