@@ -158,10 +158,20 @@ ul li span:hover {
 
     button {
         margin-top: 4vw;
+        margin-bottom: 1vh;
+        margin-left: 2vw;
     }
 
     input {
         padding-top: 2vh; 
+        padding-left: 5vw;
+        background-color: rgb(241, 241, 241);
+        border-radius: 30px;
+        padding-bottom: 2vh;
+    }
+
+    .row {
+        background-color: white;
     }
 
     ul li {
