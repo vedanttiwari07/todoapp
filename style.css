@@ -164,11 +164,12 @@ ul li span:hover {
     }
 
     input {
-        padding-top: 2vh; 
+        padding-top: 1.5vh; 
         padding-left: 5vw;
         background-color: rgb(241, 241, 241);
         border-radius: 30px;
-        padding-bottom: 2vh;
+        padding-bottom: 1.5vh;
+        font-size: 15px;
     }
 
     .row {
